@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en" data-band="rgb">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Projects — Dr. Puneet Kumar Mishra</title>
+  <meta name="description" content="Research projects at CSIR–National Institute of Oceanography: shoreline change monitoring, coastal management information systems, beach carrying capacity and management plans for Goa's ecologically sensitive areas.">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600&family=Spectral:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="vendor/leaflet/leaflet.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script>
+    try { var b = localStorage.getItem("pkm-band"); if (b) document.documentElement.dataset.band = b; } catch (e) {}
+  </script>
+</head>
+<body>
+
+<header class="site-head">
+  <div class="wrap">
+    <a class="mark" href="index.html">Dr. Puneet K. Mishra <small>CSIR–NIO, Goa</small></a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="nav">Menu</button>
+    <nav class="nav" id="nav" aria-label="Site">
+      <a href="index.html">Home</a>
+      <a href="publications.html">Publications</a>
+      <a href="presentations.html">Presentations</a>
+      <a href="projects.html" aria-current="page">Projects</a>
+      <a href="awards.html">Awards</a>
+    </nav>
+    <div class="band" role="group" aria-label="Band combination (site colours)">
+      <span class="lbl">Bands</span>
+      <button type="button" data-band="rgb" aria-pressed="true" title="True colour — press 1">True colour</button>
+      <button type="button" data-band="nir" aria-pressed="false" title="False colour, near-infrared — press 2">False colour</button>
+      <button type="button" data-band="ndwi" aria-pressed="false" title="Water index — press 3">Water index</button>
+    </div>
+  </div>
+</header>
+
+<main>
+  <div class="wrap page-head">
+    <h1>Research projects</h1>
+    <p class="lede">Nine sponsored and institutional projects at CSIR–NIO, from shoreline monitoring around a new berth in <span class="place">Gujarat</span> to management plans for the ecologically sensitive areas and islands of <span class="place">Goa</span>. Select a project to see where it is.</p>
+  </div>
+
+  <section class="section" style="padding-top:28px">
+    <div class="wrap">
+      <div class="filters" data-filter-for="#project-list" aria-label="Filter by theme">
+        <span class="lbl">Theme</span>
+        <button class="pill" type="button" data-value="all" aria-pressed="true">All</button>
+        <button class="pill" type="button" data-value="shoreline" aria-pressed="false">Shoreline change</button>
+        <button class="pill" type="button" data-value="management" aria-pressed="false">Coastal management</button>
+        <button class="pill" type="button" data-value="survey" aria-pressed="false">Surveys</button>
+        <button class="pill" type="button" data-value="ecology" aria-pressed="false">Ecology</button>
+        <span class="count" data-count-for="#project-list"></span>
+      </div>
+
+      <div class="project-layout">
+        <ol class="projects" id="project-list">
+          <li class="project" data-tags="shoreline" data-site="sikka">
+            <span class="num">1</span>
+            <div>
+              <h3>Shoreline changes off Sikka during and after construction of Berth A2</h3>
+              <p class="what">Monitoring how a new berth altered the adjacent shoreline, before and after construction.</p>
+              <span class="theme">Shoreline change</span>
+            </div>
+            <div class="where"><span>Sikka, Gulf of Kutch</span><span>Gujarat</span></div>
+          </li>
+
+          <li class="project" data-tags="shoreline management" data-site="oscom">
+            <span class="num">2</span>
+            <div>
+              <h3>Causes of sea erosion and measures to regain the beach within the IREL mining lease at OSCOM</h3>
+              <p class="what">Scientific studies for Indian Rare Earths Limited to identify why the beach is eroding and what would bring it back.</p>
+              <span class="theme">Shoreline change</span> <span class="theme">Coastal management</span>
+            </div>
+            <div class="where"><span>OSCOM, Chhatrapur</span><span>Odisha</span></div>
+          </li>
+
+          <li class="project" data-tags="management" data-site="cmis">
+            <span class="num">3</span>
+            <div>
+              <h3>Coastal Management Information System (CMIS) for Goa and south Maharashtra</h3>
+              <p class="what">Implementation of CMIS as a shared data and decision platform for the state of Goa and the south Maharashtra coast.</p>
+              <span class="theme">Coastal management</span>
+            </div>
+            <div class="where"><span>Goa and south Maharashtra</span><span>Konkan coast</span></div>
+          </li>
+
+          <li class="project" data-tags="shoreline management" data-site="cwc">
+            <span class="num">4</span>
+            <div>
+              <h3>Shoreline morphodynamics and coupled hydro-morphological simulation using CWC's CMIS</h3>
+              <p class="what">Multi-source observations and coupled simulation to develop site-specific, climate-resilient coastal protection plans.</p>
+              <span class="theme">Shoreline change</span> <span class="theme">Coastal management</span>
+            </div>
+            <div class="where"><span>CSIR–NIO</span><span>Goa</span></div>
+          </li>
+
+          <li class="project" data-tags="management" data-site="beaches">
+            <span class="num">5</span>
+            <div>
+              <h3>Beach carrying capacity study for the coastal beaches of Goa</h3>
+              <p class="what">How much use Goa's beaches can sustain, assessed beach by beach.</p>
+              <span class="theme">Coastal management</span>
+            </div>
+            <div class="where"><span>Beaches of Goa</span><span>Goa</span></div>
+          </li>
+
+          <li class="project" data-tags="management ecology" data-site="esa">
+            <span class="num">6</span>
+            <div>
+              <h3>Management plans for the Ecologically Sensitive Areas (ESAs) and islands of Goa</h3>
+              <p class="what">Preparation of management plans for the state's ESAs and islands.</p>
+              <span class="theme">Coastal management</span> <span class="theme">Ecology</span>
+            </div>
+            <div class="where"><span>ESAs and islands</span><span>Goa</span></div>
+          </li>
+
+          <li class="project" data-tags="ecology" data-site="reefs">
+            <span class="num">7</span>
+            <div>
+              <h3>Baseline study of the biodiversity and biophysical status of coral reefs along the Maharashtra coastline</h3>
+              <p class="what">Establishing the condition of the reefs and their prospects.</p>
+              <span class="theme">Ecology</span>
+            </div>
+            <div class="where"><span>Maharashtra coastline</span><span>Arabian Sea</span></div>
+          </li>
+
+          <li class="project" data-tags="survey" data-site="arossim">
+            <span class="num">8</span>
+            <div>
+              <h3>Survey of the property bearing Sy. 111/1 of Arossim</h3>
+              <p class="what">Site survey for a coastal property.</p>
+              <span class="theme">Survey</span>
+            </div>
+            <div class="where"><span>Arossim</span><span>Goa</span></div>
+          </li>
+
+          <li class="project" data-tags="survey" data-site="cavelossim">
+            <span class="num">9</span>
+            <div>
+              <h3>Survey of the property bearing 134/3 of Tambori Ward, Cavelossim, Salcette</h3>
+              <p class="what">Site survey for a coastal property.</p>
+              <span class="theme">Survey</span>
+            </div>
+            <div class="where"><span>Cavelossim, Salcette</span><span>Goa</span></div>
+          </li>
+        </ol>
+
+        <div class="sticky">
+          <div class="map-frame" id="project-map">
+            <div class="map" role="application" aria-label="Map of project locations"></div>
+            <div class="map-fallback"><p>The project map needs an internet connection to load satellite tiles. Locations are shown beside each project.</p></div>
+          </div>
+          <p class="map-caption">Marker positions are approximate. Imagery © Esri and partners.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <span>© <span data-year>2026</span> Dr. Puneet Kumar Mishra</span>
+    <span>Switch the band combination in the header, or press 1, 2 or 3.</span>
+  </div>
+</footer>
+
+<script src="vendor/leaflet/leaflet.js"></script>
+<script src="js/main.js"></script>
+<script>
+  (function () {
+    var sites = [
+      { id: "sikka", name: "Sikka, Berth A2", where: "Gulf of Kutch, Gujarat", note: "Shoreline change during and after berth construction", lat: 22.43, lng: 69.84 },
+      { id: "oscom", name: "OSCOM, Indian Rare Earths Ltd", where: "Chhatrapur, Odisha", note: "Sea erosion in the mining lease; measures to regain the beach", lat: 19.33, lng: 84.97 },
+      { id: "cmis", name: "CMIS for Goa and south Maharashtra", where: "Konkan coast", note: "Coastal Management Information System", lat: 15.75, lng: 73.65 },
+      { id: "cwc", name: "CWC CMIS hydro-morphological simulation", where: "CSIR–NIO, Dona Paula, Goa", note: "Climate-resilient protection plans", lat: 15.455, lng: 73.80 },
+      { id: "beaches", name: "Beach carrying capacity, Goa", where: "Coastal beaches of Goa", note: "", lat: 15.27, lng: 73.92 },
+      { id: "esa", name: "ESAs and islands of Goa", where: "Goa", note: "Management plans", lat: 15.50, lng: 73.95 },
+      { id: "reefs", name: "Coral reefs of the Maharashtra coastline", where: "Maharashtra", note: "Biodiversity and biophysical baseline", lat: 16.06, lng: 73.46 },
+      { id: "arossim", name: "Arossim, Sy. 111/1", where: "Goa", note: "Property survey", lat: 15.33, lng: 73.90 },
+      { id: "cavelossim", name: "Cavelossim, 134/3 Tambori Ward", where: "Salcette, Goa", note: "Property survey", lat: 15.17, lng: 73.94 }
+    ];
+    window.makeSiteMap(document.getElementById("project-map"), sites, {});
+  })();
+</script>
+</body>
+</html>
